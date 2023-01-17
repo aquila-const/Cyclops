@@ -11,7 +11,7 @@ To begin the project we should have in our minds a base construct of what would 
 - Coding standards:
   - Best practices for not only our languages(c/c++, rust and python) but also the best practices for simulating the chipsets and boards.
 - Best possible approaches:
-  - Some first attempts, if not all, will be heavily niave in nature. This is okay as programming is all about learning and things get better with time.
+  - Some first attempts, if not all, will be heavily naive in nature. This is okay as programming is all about learning and things get better with time.
 - Time consumption:
   - Programming takes time but we should keep in mind that we need to not get lost in our ideas and just lay them on the table. The best thing we can do is help eachother out as that is what open source is really all about. Listening and helping. 
 - Organization:
