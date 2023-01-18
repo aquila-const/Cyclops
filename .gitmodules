@@ -1,0 +1,18 @@
+[submodule "vendor/imgui"]
+	path = vendor/imgui
+	url = https://github.com/aquila-const/imgui
+[submodule "vendor/Vulkan-Headers"]
+	path = vendor/Vulkan-Headers
+	url = https://github.com/aquila-const/Vulkan-Headers
+[submodule "vendor/glslang"]
+	path = vendor/glslang
+	url = https://github.com/aquila-const/glslang.git
+[submodule "vendor/tinyxml2"]
+	path = vendor/tinyxml2
+	url = https://github.com/aquila-const/tinyxml2.git
+[submodule "vendor/glm"]
+	path = vendor/glm
+	url = https://github.com/aquila-const/glm.git
+[submodule "vendor/glfw"]
+	path = vendor/glfw
+	url = https://github.com/aquila-const/glfw.git
