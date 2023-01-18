@@ -22,8 +22,7 @@ To begin the project we should have in our minds a base construct of what would 
 - Side note:
 Also try your best to attempt the problem first before outright asking and be as detailed as possible. Keep logs, compiling errors, you name it make sure you visually guide the person to understand as clearly as possible the road to your misfortune.
 
-## Things you should already know
-Currently we are focusing on ARM. We should already know things related to the current chip model in focus that being MALI. Some resources to help with that are listed below:
+## Resources
 
 [Mali GPU Training Youtube Playlist](https://www.youtube.com/watch?v=tnR4mExVClY&list=PLKjl7IFAwc4QUTejaX2vpIwXstbgf8Ik7&index=1)
 
@@ -33,11 +32,11 @@ Currently we are focusing on ARM. We should already know things related to the c
 
 [Vulkan Best Practices](https://www.vulkan.org/learn#vulkan-best-practice)
 
-[Vulkan API]()
+[Vulkan API](https://vulkan.lunarg.com/doc/view/latest/windows/apispec.html)
 
 [Vulkan Render Pipeline](https://vkguide.dev/docs/chapter-2/vulkan_render_pipeline/)
 
-You don't have to remember everything, especially the entire Vulkan API, but it is good to know the basics and how to use it. This is a good start and will help you understand the codebase better.
+[Mali Performance Counters docs](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/mali-midgard-family-performance-counters)
 
 ## TODO:
 Begin with ARM chipsets and move onto others.
