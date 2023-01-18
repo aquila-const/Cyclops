@@ -2,7 +2,7 @@
 GUI tool for analyzing hardware.
 
 ## Description
-This tool, hopefully one to add to your toolbelt, utilizes differing information about a board.
+This tool, hopefully one to add to your toolbelt, utilizes differing information about a board. It helps with testing such as benchmarking, power testing and simulating. Utilizing Vulkan and OpenGL to run benchmarks and render 3D objects of boards with datapoints.
 
 # For Contributors
 
@@ -22,8 +22,52 @@ To begin the project we should have in our minds a base construct of what would 
 - Side note:
 Also try your best to attempt the problem first before outright asking and be as detailed as possible. Keep logs, compiling errors, you name it make sure you visually guide the person to understand as clearly as possible the road to your misfortune.
 
+## Things you should already know
+Currently we are focusing on ARM. We should already know things related to the current chip model in focus that being MALI. Some resources to help with that are listed below:
+
+[Mali GPU Training Youtube Playlist](https://www.youtube.com/watch?v=tnR4mExVClY&list=PLKjl7IFAwc4QUTejaX2vpIwXstbgf8Ik7&index=1)
+
+[Mali GPU Training Docs](https://developer.arm.com/Gaming%20Graphics%20and%20VR#aq=%40navigationhierarchiescategories%3D%3D%22Gaming%2C%20Graphics%20and%20VR%22&numberOfResults=48&f[navigationhierarchiestopics]=Free%20Open%20Training)
+
+[Vulkan Best Practices Mali GPU](https://developer.arm.com/documentation/101897/latest/)
+
+[Vulkan Best Practices](https://www.vulkan.org/learn#vulkan-best-practice)
+
+[Vulkan API]()
+
+[Vulkan Render Pipeline](https://vkguide.dev/docs/chapter-2/vulkan_render_pipeline/)
+
+You don't have to remember everything, especially the entire Vulkan API, but it is good to know the basics and how to use it. This is a good start and will help you understand the codebase better.
+
 ## TODO:
 Begin with ARM chipsets and move onto others.
+
+Add Vulkan and OpenGL third party libraries
+
+Add Vulkan and OpenGL rendering
+
+Add Vulkan and OpenGL benchmarking
+
+Add Vulkan and OpenGL simulation
+
+Add Vulkan and OpenGL power testing
+
+Add Vulkan and OpenGL debugging
+
+Add Vulkan and OpenGL profiling
+
+Add Vulkan and OpenGL validation layers
+
+Add Vulkan shading language support (SPIR-V)
+
+Implement Vulkan and OpenGL into the GUI
+
+Implement Vulkan and OpenGL code testing
+
+Add Vulkan and OpenGL documentation (for third party libraries, standards, etc.)
+
+Add github actions for CI/CD
+
 
 ### Chipsets:
 - ARM :
