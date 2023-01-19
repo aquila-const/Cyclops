@@ -6,8 +6,7 @@ This tool, hopefully one to add to your toolbelt, utilizes differing information
 
 # For Contributors
 
-## Project structure:
-To begin the project we should have in our minds a base construct of what would be a suitable structure. We can therefore later alter and change it over time to make this project a nice and strong, yet observant, cyclops. Before we continue, of course, we should first think about our approach which will consist of:
+Before we continue, of course, we should first think about our approach which will consist of:
 - Coding standards:
   - Best practices for not only our languages(c/c++, rust and python) but also the best practices for simulating the chipsets and boards.
 - Best possible approaches:
