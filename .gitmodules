@@ -16,3 +16,6 @@
 [submodule "vendor/glfw"]
 	path = vendor/glfw
 	url = https://github.com/aquila-const/glfw.git
+[submodule "vendor/gfxreconstruct"]
+	path = vendor/gfxreconstruct
+	url = https://github.com/LunarG/gfxreconstruct.git
