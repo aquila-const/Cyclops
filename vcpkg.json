@@ -10,7 +10,7 @@
     "opengl",
     {
       "name": "imgui",
-      "features": [ "freetype", "glfw-binding", "opengl3-binding" ]
+      "features": [ "freetype", "glfw-binding", "opengl3-binding", "docking-experimental" ]
     }
   ]
 }
