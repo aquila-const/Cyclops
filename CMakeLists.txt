@@ -1,20 +1,29 @@
 cmake_minimum_required(VERSION 3.24.0) #current version
+project(cyclops C CXX)
 
-if (CMAKE_COMPILER_IS_GNUCC)
-    option(ENABLE_COVERAGE "Enable coverage reporting for gcc/clang" FALSE)
-    if(ENABLE_COVERAGE)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 --coverage -fprofile-arcs -ftest-coverage")
-        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0 --coverage -fprofile-arcs -ftest-coverage")
-        set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --coverage")
-        set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} --coverage")
-        
-    endif()
-endif()
+## Find dependencies
+find_package(glfw3 CONFIG REQUIRED)
+find_package(glew REQUIRED)
+find_package(OpenGL REQUIRED)
+find_package(glad REQUIRED)
+find_package(glm CONFIG REQUIRED)
+find_package(Freetype CONFIG REQUIRED)
+find_package(imgui CONFIG REQUIRED)
 
-if(MSVC)
-    add_compile_options(/W4)
-else()
-    add_compile_options(-Wall -Wextra -Wpedantic -Werror)
-endif()
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(main src/main.cpp)
+set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DVK_PROTOTYPES")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DVK_PROTOTYPES")
+
+add_executable(${PROJECT_NAME} application/main.cpp)
+target_link_libraries(
+  ${PROJECT_NAME}
+  PRIVATE
+    freetype
+    glfw
+    glad::glad
+    glm::glm
+    GLEW::GLEW
+    imgui::imgui
+)
+target_compile_definitions(${PROJECT_NAME} PUBLIC IMGUI_IMPL_OPENGL_LOADER_GLAD)

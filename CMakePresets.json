@@ -1,0 +1,43 @@
+{
+    "version": 2,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "cyclops_build",
+            "displayName": "Configure preset using toolchain file",
+            "description": "Sets Ninja generator, build and install directory",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "C:/Users/hunte/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+            }
+        },
+        {
+            "name": "default",
+            "displayName": "Default Config",
+            "description": "Default build using Make and vcpkg",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+              "CMAKE_BUILD_TYPE": "Release",
+              "CMAKE_TOOLCHAIN_FILE": "C:/Users/hunte/vcpkg/scripts/buildsystems/vcpkg.cmake"
+            }
+          },
+          {
+            "name": "default-msvc",
+            "displayName": "Default MSVC",
+            "description": "Default build using Visual Studio and vcpkg",
+            "generator": "Visual Studio 16 2019",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+              "CMAKE_TOOLCHAIN_FILE": "C:/Users/hunte/vcpkg/scripts/buildsystems/vcpkg.cmake"
+            }
+          }
+    ]
+}
