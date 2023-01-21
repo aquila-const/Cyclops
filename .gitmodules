@@ -19,3 +19,7 @@
 [submodule "vendor/vulkan"]
 	path = vendor/vulkan
 	url = https://github.com/aquila-const/Vulkan-Headers
+[submodule "vendor/imgui"]
+	path = vendor/imgui
+	url = https://github.com/aquila-const/imgui.git
+	branch = docking
