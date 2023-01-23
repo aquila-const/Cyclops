@@ -6,12 +6,15 @@
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
+#include "wtypes.h"
 #include <stdio.h>
+#include <iostream>
 #define GL_SILENCE_DEPRECATION
 #if defined(IMGUI_IMPL_OPENGL_ES2)
 #include <GLES2/gl2.h>
 #endif
 #include <GLFW/glfw3.h> // Will drag system OpenGL headers
+using namespace std;
 
 // [Win32] Our example includes a copy of glfw3.lib pre-compiled with VS2010 to maximize ease of testing and compatibility with old VS compilers.
 // To link with VS2010-era libraries, VS2015+ requires linking with legacy_stdio_definitions.lib, which we do using this pragma.
@@ -20,6 +23,15 @@
 #pragma comment(lib, "legacy_stdio_definitions")
 #endif
 
+void AcquireDesktopResolution(int& horizontal, int& vertical){
+    RECT RDesktop;
+    const HWND HDesktop = GetDesktopWindow();
+
+    GetWindowRect(HDesktop, &RDesktop);
+    horizontal = RDesktop.right;
+    vertical = RDesktop.bottom;
+}
+
 static void glfw_error_callback(int error, const char* description)
 {
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
@@ -27,6 +39,8 @@ static void glfw_error_callback(int error, const char* description)
 
 int main(int, char**)
 {
+    int dhorizontal = 0;
+    int dvertical = 0;
     // Setup window
     glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit())
@@ -56,7 +70,10 @@ int main(int, char**)
 #endif
 
     // Create window with graphics context
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "Dear ImGui GLFW+OpenGL3 example", NULL, NULL);
+   
+    AcquireDesktopResolution(dhorizontal, dvertical);
+    //TODO: check for GLFWmonitor* monitor and GLFWwindow* share and handle accordingly
+    GLFWwindow* window = glfwCreateWindow(dhorizontal, dvertical, "Cyclops", NULL, NULL);
     if (window == NULL)
         return 1;
     glfwMakeContextCurrent(window);
