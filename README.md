@@ -38,6 +38,9 @@ Also try your best to attempt the problem first before outright asking and be as
 [Mali Performance Counters docs](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/mali-midgard-family-performance-counters)
 
 ## TODO:
+
+Redo ARM's PATRACE application.
+
 Begin with ARM chipsets and move onto others.
 
 Add Vulkan and OpenGL third party libraries
