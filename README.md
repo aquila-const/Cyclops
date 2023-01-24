@@ -4,22 +4,13 @@ GUI tool for analyzing hardware.
 ## Description
 This tool, hopefully one to add to your toolbelt, utilizes differing information about a board. It helps with testing such as benchmarking, power testing and simulating. Utilizing Vulkan and OpenGL to run benchmarks and render 3D objects of boards with datapoints.
 
-# For Contributors
+## Getting started
+Clone the repo and you can run a multitude of commands but just running the setup script should help. For now it is Windows Based but might do some side by side Linux and Windows updates.
 
-Before we continue, of course, we should first think about our approach which will consist of:
-- Coding standards:
-  - Best practices for not only our languages(c/c++, rust and python) but also the best practices for simulating the chipsets and boards.
-- Best possible approaches:
-  - Some first attempts, if not all, will be heavily naive in nature. This is okay as programming is all about learning and things get better with time.
-- Time consumption:
-  - Programming takes time but we should keep in mind that we need to not get lost in our ideas and just lay them on the table. The best thing we can do is help eachother out as that is what open source is really all about. Listening and helping. 
-- Organization:
-  - Try not to be everywhere and list things neatly and as understandable as possible. No question is a dumb question. Who knows, your question could inspire someone to create an answer!
-- Imposter Syndrome:
-  - We all have had it and sometimes we still do. Just know that even the most prolific people in history started from somewhere and if not every one of them were at the same stage you are. So relax and enjoy the journey.
-  
-- Side note:
-Also try your best to attempt the problem first before outright asking and be as detailed as possible. Keep logs, compiling errors, you name it make sure you visually guide the person to understand as clearly as possible the road to your misfortune.
+Windows
+```
+.\run_setup.bat
+```
 
 ## Resources
 
@@ -36,10 +27,3 @@ Also try your best to attempt the problem first before outright asking and be as
 [Vulkan Render Pipeline](https://vkguide.dev/docs/chapter-2/vulkan_render_pipeline/)
 
 [Mali Performance Counters docs](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/mali-midgard-family-performance-counters)
-
-### Chipsets:
-- ARM :
-  - mali -> models (G615, G715, Immortalis-G715): Valhall 4th gen
-
-## Why am I doing this?
-I really love GPU programming and embedded solutions as a whole. I started with creating games with C/C++ and this is a little bit of a homage to said memories.
