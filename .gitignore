@@ -3,3 +3,5 @@
 *.vscode
 *build
 *vcpkg_installed
+*.png
+application/geometrics*
