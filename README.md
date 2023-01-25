@@ -27,3 +27,43 @@ Windows
 [Vulkan Render Pipeline](https://vkguide.dev/docs/chapter-2/vulkan_render_pipeline/)
 
 [Mali Performance Counters docs](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/mali-midgard-family-performance-counters)
+
+## TODO:
+
+Redo ARM's PATRACE application.
+
+Begin with ARM chipsets and move onto others.
+
+Add Vulkan and OpenGL third party libraries
+
+Add Vulkan and OpenGL rendering
+
+Add Vulkan and OpenGL benchmarking
+
+Add Vulkan and OpenGL simulation
+
+Add Vulkan and OpenGL power testing
+
+Add Vulkan and OpenGL debugging
+
+Add Vulkan and OpenGL profiling
+
+Add Vulkan and OpenGL validation layers
+
+Add Vulkan shading language support (SPIR-V)
+
+Implement Vulkan and OpenGL into the GUI
+
+Implement Vulkan and OpenGL code testing
+
+Add Vulkan and OpenGL documentation (for third party libraries, standards, etc.)
+
+Add github actions for CI/CD
+
+
+### Chipsets:
+- ARM :
+  - mali -> models (G615, G715, Immortalis-G715): Valhall 4th gen
+
+## Why am I doing this?
+I really love GPU programming and embedded solutions as a whole. I started with creating games with C/C++ and this is a little bit of a homage to said memories.
