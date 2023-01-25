@@ -3,7 +3,8 @@ GUI tool for analyzing hardware.
 
 ## Description
 This tool, hopefully one to add to your toolbelt, utilizes differing information about a board. It helps with testing such as benchmarking, power testing and simulating. Utilizing Vulkan and OpenGL to run benchmarks and render 3D objects of boards with datapoints.
-
+## State of things
+![state of things](./markdown/images/slow_but_steady.png)
 ## Getting started
 Clone the repo and you can run a multitude of commands but just running the setup script should help. For now it is Windows Based but might do some side by side Linux and Windows updates.
 
