@@ -1,5 +1,6 @@
 #include "application.hpp"
 #include "components/component.hpp"
+#include "components/engine/viewport.hpp"
 #include <imgui.h>
 #include <implot.h>
 
@@ -95,6 +96,7 @@ namespace Application
             ImGui::EndMenuBar();
         }
         Sidebar_Init();
+        ViewPort::ViewPort_Init();
         ImGui::Begin("Phase Graph");
         if (ImGui::BeginTabBar("Plots")) {
             

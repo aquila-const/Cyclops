@@ -3,5 +3,5 @@
 *.vscode
 *build
 *vcpkg_installed
-*.png
+cyclops_logo.png
 application/geometrics*

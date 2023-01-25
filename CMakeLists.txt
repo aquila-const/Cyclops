@@ -20,7 +20,7 @@ set(main_dir application)
 set(components_dir ${main_dir}/components)
 set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DVK_PROTOTYPES")
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DVK_PROTOTYPES")
-file(GLOB sources ${main_dir}/*.cpp ${components_dir}/*.cpp)
+file(GLOB sources ${main_dir}/*.cpp ${components_dir}/*.cpp ${components_dir}/engine/*.cpp)
 
 add_executable(${PROJECT_NAME} ${sources})
 target_link_libraries(
