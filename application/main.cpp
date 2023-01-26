@@ -43,7 +43,6 @@ int main(int argc, char const *argv[])
 {
     int dhorizontal = 0;
     int dvertical = 0;
-    ImGuiViewport* main_viewport = ImGui::GetMainViewport();
 
     // Setup window
     glfwSetErrorCallback(glfw_error_callback);
@@ -172,11 +171,6 @@ int main(int argc, char const *argv[])
         ImGui::SetNextWindowPos(ImVec2(0.0f, 0.0f));
         ImGui::SetNextWindowSize(ImGui::GetIO().DisplaySize);
 #endif
-        ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
-        ImGui::Begin("Test", NULL, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoResize);
-
-        ImGui::End();
-        ImGui::PopStyleVar(2);
         // Update and Render additional Platform Windows
         // (Platform functions may change the current OpenGL context, so we save/restore it to make it easier to paste this code elsewhere.
         //  For this specific demo app we could also call glfwMakeContextCurrent(window) directly)

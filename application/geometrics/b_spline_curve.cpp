@@ -1,4 +1,4 @@
-//Using the de boor algorithm
+//Using the de boor algorithm WIP
 int createBSplineCurve(int p[], int controlpoint){
     int n;
     int temp = 0;

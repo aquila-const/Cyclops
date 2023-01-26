@@ -6,8 +6,8 @@
 using namespace ImGui;
 
 namespace ViewPort {
-	void ViewPort_Init() {
-		Begin("Viewport");
+	void ViewPort_Init(const char* window_title) {
+		Begin(window_title);
 		Text("No item detected.");
 		Button("Add a gerber or step file.");
 		End();
