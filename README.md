@@ -13,6 +13,15 @@ Windows
 .\run_setup.bat
 ```
 
+## Some Controls
+This is a table that will be updated with different key based commands but for now it's these.
+
+| Key(s)  |      Are      | Example |
+|----------|:-------------:|:-------------:|
+| Ctrl+Tab |  Cycle window focus | Quick window changing|
+| Right Click |    Open menu for other options   | Right clicking on graphs |
+| Left Click | To select | To focus on a window or select options from a menu |
+
 ## Resources
 
 [Mali GPU Training Youtube Playlist](https://www.youtube.com/watch?v=tnR4mExVClY&list=PLKjl7IFAwc4QUTejaX2vpIwXstbgf8Ik7&index=1)
