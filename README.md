@@ -21,6 +21,7 @@ This is a table that will be updated with different key based commands but for n
 | Ctrl+Tab |  Cycle window focus | Quick window changing|
 | Right Click |    Open menu for other options   | Right clicking on graphs |
 | Left Click | To select | To focus on a window or select options from a menu |
+| Shift + Left Click | During dragging to hide docking option | When you want to move a window without docking |
 
 ## Resources
 
