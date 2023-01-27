@@ -2,12 +2,13 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Only current version now is Windows but will be opening it up to Linux and MacOS.
 
 | Version | Supported          |
 | ------- | ------------------ |
 | 0.001   | :white_check_mark: Windows MSVC version >= 17 |
+| 0.001   | :x: Linux          |
+| 0.001   | :x: MacOS          |
 
 ## Reporting a Vulnerability
 
