@@ -23,3 +23,6 @@
 	path = vendor/imgui
 	url = https://github.com/aquila-const/imgui.git
 	branch = docking
+[submodule "deps/Colchian"]
+	path = deps/Colchian
+	url = https://github.com/aquila-const/Colchian.git

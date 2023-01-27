@@ -8,6 +8,8 @@
     "freetype",
     "glew",
     "opengl",
+    "implot",
+    "kissfft",
     {
       "name": "imgui",
       "features": [ "freetype", "glfw-binding", "opengl3-binding", "docking-experimental" ]
