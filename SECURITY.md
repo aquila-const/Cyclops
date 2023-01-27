@@ -11,8 +11,4 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Create an issue and mark as critical. Make sure to triple check by checking resources etc and include stages of reproduction and a clear understanding of how you found the vulnerability so it can be quickly assessed and squashed.
