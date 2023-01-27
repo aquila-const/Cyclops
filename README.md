@@ -7,6 +7,7 @@ This tool, hopefully one to add to your toolbelt, utilizes differing information
 ![state of things](./markdown/images/slow_but_steady.png)
 ## Getting started
 
+
 Read the code of conduct and contributing markdown pages.
 
 Clone the repo and you can run a multitude of commands but just running the setup script should help. For now it is Windows Based but might do some side by side Linux and Windows updates.
@@ -25,6 +26,7 @@ This is a table that will be updated with different key based commands but for n
 | Right Click |    Open menu for other options   | Right clicking on graphs |
 | Left Click | To select | To focus on a window or select options from a menu |
 | Shift + Left Click | During dragging to hide docking option | When you want to move a window without docking |
+
 
 ## Resources
 
