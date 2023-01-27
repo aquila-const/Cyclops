@@ -1,0 +1,10 @@
+name: Unit tests
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Unit tests
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
