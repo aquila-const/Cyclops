@@ -1,0 +1,7 @@
+*out
+*.vs
+*.vscode
+*build
+*vcpkg_installed
+cyclops_logo.png
+application/geometrics*
